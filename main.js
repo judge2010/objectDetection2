@@ -9,7 +9,9 @@ function setup(){
     ObjectDetector=ml5.objectDetector("cocossd",modelLoaded);
     document.getElementById("status").innerHTML= "Status - Detecting Object";
     video=createCapture(VIDEO);
+    video.size(380,380);
     video.hide();
+     
 };
 function draw(){
  image(video ,0 ,0 ,300 ,300);
